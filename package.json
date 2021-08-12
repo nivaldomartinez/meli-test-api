@@ -1,0 +1,19 @@
+{
+  "name": "meli-test-api",
+  "version": "1.0.0",
+  "description": "api rest for meli-test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest"
+  ],
+  "author": "nivaldo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
