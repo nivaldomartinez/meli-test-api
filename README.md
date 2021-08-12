@@ -11,14 +11,14 @@ luego
 npm start
 ```
 
-#Rutas
+# Rutas
 
 acceda a la siguiente ruta para optener el detalle de un producto
-#####/api/items/:productId
+##### /api/items/:productId
 
 parametros:
 
-#####:productId => id del producto a consultar
+##### :productId => id del producto a consultar
 
 respuesta:
 ``` 
@@ -48,7 +48,8 @@ respuesta:
 <br>
 
 Para buscar productos por nombre use
-#####/api/items?q=:query
+
+##### /api/items?q=:query
 
 parametros:
 
