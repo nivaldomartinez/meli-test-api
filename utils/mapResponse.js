@@ -1,5 +1,5 @@
 
-function getSeparatedPrice(originalPrice) {
+const getSeparatedPrice = (originalPrice) => {
     const [price, decimals] = `${originalPrice}`.split('.');
 
     return [parseInt(price), parseInt(decimals)];
@@ -54,7 +54,20 @@ module.exports.mapProductResponse = (meliProductResponse, meliProductDescription
             condition: meliProductResponse.condition,
             free_shipping: meliProductResponse.shipping.free_shipping,
             sold_quantity: meliProductResponse.sold_quantity,
-            description: meliProductDescriptionResponse.plain_text
+            description: meliProductDescriptionResponse.plain_text,
+            category_id: meliProductResponse.category_id
         }
     };
 };
+
+module.exports.mapCategoriesResponse = (meliCategoriesResponse) => {
+    return {
+        author: {
+            name: 'MELI',
+            lastname: 'TEST'
+        },
+        breadcrumb: meliCategoriesResponse.path_from_root
+    };
+};
+
+module.exports.getSeparatedPrice = getSeparatedPrice;
